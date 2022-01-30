@@ -15,7 +15,7 @@ text-decoration: none;
 `
 
 const NContents = styled.nav`
-    font-size: 20px;
+    font-size: 5vh;
     padding: 0 90px;
     display: flex;
     align-items: center;
@@ -34,17 +34,17 @@ function Contact(props) {
         <NContents>
         <A1>
                     <Extlink href="https://www.linkedin.com/in/mirayna-mckinney-905026213" style={{ textDecoration: 'none'  }}>
-                        <BsLinkedin className='nav-link' size={30} color={props.theme.opposite}/>
+                        <BsLinkedin className='nav-link' style= {{padding: '0vh'}} size={'5vh'} color={props.theme.opposite}/>
                     </Extlink>
         </A1>
         <A1>
                     <Extlink href="https://www.linkedin.com/in/mirayna-mckinney-905026213" style={{ textDecoration: 'none' }}>
-                        <BsInstagram className='nav-link' size={30} color={props.theme.opposite}/>
+                        <BsInstagram className='nav-link' style= {{padding: '0vh'}} size={'5vh'} color={props.theme.opposite}/>
                     </Extlink>
         </A1>
         <A1>
                     <Extlink href="https://github.com/MiraynaMckinney" style={{ textDecoration: 'none' }}>
-                        <BsGithub className='nav-link' size = {30} color={props.theme.opposite}/>
+                        <BsGithub className='nav-link' style= {{padding: '0vh'}} size = {'5vh'} color={props.theme.opposite}/>
                     </Extlink>
         </A1>
         </NContents>

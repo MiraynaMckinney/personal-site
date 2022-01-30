@@ -1,21 +1,20 @@
 import React, {useState} from "react";
 import './projectslider.css'
 import {BiRightArrow, BiLeftArrow} from 'react-icons/bi'
-import WW1 from '../assets/WW1.png'
+import WW3 from '../assets/WW3.png'
 import snow from '../assets/snow.jpeg'
+import ball from '../assets/ball.png'
 
 
 const Slides = [
     {
-        image: WW1,
+        image: WW3,
         source:'https://github.com/guilhermetco/CS97---WestWoodWalks',
-        text:'first',
 
     },
     {
-        image:'https://ychef.files.bbci.co.uk/976x549/p09g169z.jpg',
+        image:ball,
         source:'',
-        text:'second'
     }
 ]
 const slidesNum = Slides.length;

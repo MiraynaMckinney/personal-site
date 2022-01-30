@@ -66,8 +66,8 @@
     overflow: hidden;
 }
 .profileContainer{
-    width: 60vw;
-    height: 60vw;
+    width: 65vw;
+    height: 65vw;
     background-color: rgb(96, 178, 226);
     border-radius: 50%;
     float: right;

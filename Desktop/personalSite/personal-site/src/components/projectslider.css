@@ -62,8 +62,8 @@
     align-items: center;
 }
 .picimage{
-    object-fit: contain;
-    height: 50vh;
+    object-fit: cover;
+    height: 70vh;
     width: 25vw;
 }
 

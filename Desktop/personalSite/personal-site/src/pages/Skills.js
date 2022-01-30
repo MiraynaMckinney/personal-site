@@ -13,9 +13,9 @@ function Skills(props) {
                 <Title>About Me</Title>
             </div>
             <div style={{display:'flex', flexDirection:'row', justifyContent: 'center'}}>
-                <span style={{padding: '1vh'}}><PicSlider /></span>
+                
                 <span>
-                        <TagLine2 style={{ padding: '1vh', whiteSpace: 'pre-line', width:'45vw', fontSize:13 }}>
+                        <TagLine2 style={{ justifyContent: 'center', padding:'3vh', whiteSpace: 'pre-line', width:'45vw', fontSize:'2.5vh' }}>
                             Hello! My name is Mirayna Mckinney. I am in my 3rd and final year in my pursuit of a Bachelor's in Linguistics and Computer Science Major from UCLA.
                             I have always been fascinated with communication, the behind-the-sceens of computers and programs, and the combination of the two.
                             {"\n"}{"\n"}
@@ -28,6 +28,7 @@ function Skills(props) {
                             I spend my free time working on applications I've had ideas for or other projects. Outside the world of computers, I love running, snowboarding, playing soccer and playing guitar.
                         </TagLine2>
                 </span>
+                <span style={{padding: '1vh'}}><PicSlider /></span>
             </div>
         </div>
     )

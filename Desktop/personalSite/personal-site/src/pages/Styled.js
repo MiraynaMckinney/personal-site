@@ -37,7 +37,7 @@ export const Title = styled.h1`
     text-align: center;
     border-radius: '15px';
     position: 'relative';
-    font-size: '60vh';
+    font-size: 5vh;
     margin: 0;
 `;
 export const A1 = styled.a`

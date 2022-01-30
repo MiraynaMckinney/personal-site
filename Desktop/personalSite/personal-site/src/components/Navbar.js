@@ -6,6 +6,7 @@ import { HiMoon } from "react-icons/hi";
 import styled from "styled-components"
 import { Typography} from '@material-ui/core';
 import Logo from './logo';
+import { useNavigate } from 'react-router';
 
 
 const Linkcont = styled(Link)`
@@ -14,8 +15,12 @@ const Linkcont = styled(Link)`
     padding: 50 px;
     background-image: '';
     color: ${props => props.theme.tagLineColor};
+    font-size: '6vh';
 `
-
+const About = styled.div`
+    color: ${props => props.theme.tagLineColor};
+    font-size: '6vh';
+`
 function Navbar(props) {
     function changeTheme() {
         if (props.theme === "light") {
@@ -24,18 +29,34 @@ function Navbar(props) {
             props.setTheme("light");
         }
     };
-    const icon = props.theme === "light" ? <CgSun size={30} color='black' className='nav-link'/> : < HiMoon size={30} color='white' className='nav-link'/>;
+    let navigate = useNavigate();
+    async function AboutMe () {
+        await navigate('/');
+        document.getElementById("scroller").scrollTo({ top: 500, behavior: 'smooth' });
+    }
+    async function Home () {
+        await navigate('/');
+        document.getElementById("scroller").scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    const icon = props.theme === "light" ? <CgSun size={'4vh'} color='black' className='nav-link'/> : < HiMoon size={'4vh'} color='white' className='nav-link'/>;
     return (
         <Typography className='navbar-container'>
-            <Linkcont to='/' className='nav-link' ><Logo theme={props.theme}/></Linkcont>
+            <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}} >
+            <div onClick={Home} className='nav-link' ><Logo theme={props.theme}/></div>
             <Linkcont to='/resume' className='nav-link'>
                 Skills
             </Linkcont>
             <Linkcont to='/contact' className='nav-link' >
                 Contact Me
             </Linkcont>
+            <About onClick={AboutMe} className='nav-link' >
+                About Me
+            </About>
+            </div>
+            <div>
             <div onClick={changeTheme} style={{ position: 'sticky' }}>
                 {icon}
+            </div>
             </div>
             
         </Typography>

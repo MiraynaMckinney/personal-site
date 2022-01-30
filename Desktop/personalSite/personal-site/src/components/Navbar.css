@@ -1,9 +1,12 @@
 
 .nav-link{
     text-decoration: none;
+    padding: 5vh
+    
 }
 .nav-link:hover{
     transform: scale(1.03);
+    color: rgb(96, 178, 226);
 }
 
 .nav-items{
@@ -25,3 +28,4 @@
     padding: 10px 30px;
     box-sizing: border-box;
 }
+

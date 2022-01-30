@@ -9,6 +9,8 @@ const SubmitButton = styled.input`
     color: ${props => props.theme.backgroundColor};
     border-radius: 20%;
     justify-content: center;
+    width: 15vh;
+    height: 5vh;
 `;
 
 const SubmitForm = styled.div`
@@ -17,7 +19,6 @@ const SubmitForm = styled.div`
     border-radius: 10%;
     width: 50vw;
     height: 50vh;
-    opacity: .7
     
 `;
 
@@ -66,18 +67,18 @@ export default function Message(props) {
         <SubmitForm >
             <form onSubmit={sendEmail} style={{alignItems:'center'}}>
                 <div style={{display:'flex', justifyContent:'center' }}>
-                <div style={{padding:15}}>
-                <input value={values.from_name} type="text" name="from_name" onChange={handleChange} placeholder='Name' />
+                <div style={{padding:'5vh'}}>
+                <input value={values.from_name} type="text" name="from_name" onChange={handleChange} placeholder='Name' style={{width:'27vh', height: '5vh'}}/>
                 </div>
-                <div style={{padding:15}}>
-                <input value={values.from_email} type="email" name="from_email" onChange={handleChange} placeholder='Email'/>
+                <div style={{padding:'5vh'}}>
+                <input value={values.from_email} type="email" name="from_email" onChange={handleChange} placeholder='Email' style={{width:'27vh', height: '5vh'}}/>
                 </div>
                 </div>
                 <div style={{ justifyContent:'center', display:'flex'}}>
-                    <textarea value={values.message} onChange={handleChange} name="message" rows='5' placeholder='Message' style={{width:325, height:150, justifyContent:'center'}}/>
+                    <textarea value={values.message} onChange={handleChange} name="message" rows='5' placeholder='Message' style={{width:'65vh', height:'25vh', justifyContent:'center'}}/>
                     </div>
                     <div style={{display:'flex', justifyContent:'center', alignContent:'center', padding:15}}>
-                        <SubmitButton type="submit" value="Send" />
+                        <SubmitButton type="submit" value="Send" style={{fontSize: '2vh'}} />
                     </div>
             </form>
         </SubmitForm >

@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Skills from './pages/Skills';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
+
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './themes';
 
