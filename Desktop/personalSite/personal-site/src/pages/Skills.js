@@ -1,37 +1,45 @@
-import React from 'react';
-import '../components/components.css'
-import {Title, TagLine2} from "./Styled"
-import { PicSlider } from '../components/projectslider';
+import { Component } from 'react';
+import Skillscloud from '../components/wordcloud';
+import { TagLine, Title, TagLine2 } from './Styled';
+import {Slider} from '../components/projectslider';
+import { BiDownArrow } from 'react-icons/bi';
+import './Home.css'
 
-
-
-function Skills(props) {
-    const textcolor = props.theme === "light" ? 'black': 'white';
-    return (
-        <div>
-            <div style={{ height: 100 }}>
-                <Title>About Me</Title>
+class Skills extends Component {
+    render() {
+        const scroll = () => {
+            document.getElementById("scroller2").scrollTo({ top: 500, behavior: 'smooth' });
+        }
+        return (
+            <div className="pages" id='scroller2'>
+                <div className='page'>
+                    <Title>Skills</Title>
+                    <div style={{display: 'flex', textAlign: 'center'}}>
+                    <div style={{ justifyContent: 'center', padding:'3vh', whiteSpace: 'pre-line', width:'45vw'}}>
+                        <TagLine style={{fontSize:'2.5vh', paddingTop: '25vh'}}>
+                            I've developed this array of skills as I've worked on different projects over the years.
+                            {"\n"}{"\n"}
+                        </TagLine>
+                    </div>
+                    <div className='skillscloud'>
+                    <Skillscloud />
+                    </div>
+                    </div>
+                    <div className='bounce' style={{textAlign: 'center', position: 'absolute', top:'90%', width: '100vw'}}>
+                        <TagLine style={{fontSize: '2vh'}}>Check out some of my projects</TagLine>
+                        <BiDownArrow onClick= {scroll} color={this.props.theme.opposite}/>
+                    </div>
+                </div>
+                <div className='page' style={{ justifyContent: 'center' }}>
+                    <Title>Projects</Title>
+                    <TagLine>Check Out Some of the Projects I've Worked on!</TagLine>
+                    <div style={{height:'100vh', width:'100vw'}} >
+                        <Slider />
+                    </div>
+                </div>
             </div>
-            <div style={{display:'flex', flexDirection:'row', justifyContent: 'center'}}>
-                
-                <span>
-                        <TagLine2 style={{ justifyContent: 'center', padding:'3vh', whiteSpace: 'pre-line', width:'45vw', fontSize:'2.5vh' }}>
-                            Hello! My name is Mirayna Mckinney. I am in my 3rd and final year in my pursuit of a Bachelor's in Linguistics and Computer Science Major from UCLA.
-                            I have always been fascinated with communication, the behind-the-sceens of computers and programs, and the combination of the two.
-                            {"\n"}{"\n"}
-                            When it comes to Computer Science, I am most interested in
-                            web and app development and NLPs, but I am open to trying my hand in all fields.
-                            {"\n"}{"\n"}
-                            I am experienced with Node.js, React.js, Flutter, Git, C++, Python,
-                            Java and more (check out my Skills page).
-                            {"\n"}{"\n"}
-                            I spend my free time working on applications I've had ideas for or other projects. Outside the world of computers, I love running, snowboarding, playing soccer and playing guitar.
-                        </TagLine2>
-                </span>
-                <span style={{padding: '1vh'}}><PicSlider /></span>
-            </div>
-        </div>
-    )
+        );
+    }
 }
 
-export default Skills
+export default Skills;

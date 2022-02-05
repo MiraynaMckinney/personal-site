@@ -28,8 +28,9 @@ function Contact(props) {
     console.log(props.theme.opposite)
     return(
         <Container>
-        <Title>Contact Me</Title>
-        <TagLine style={{marginBottom: '2vh'}}>Get in touch with me or just leave a comment!</TagLine>
+        <Title style={{marginBottom: '2vh'}}>Contact Me</Title>
+        <TagLine style={{marginBottom: '2vh', fontSize: '2vh'}}>Send Me An Email At miraynamckinney77@gmail.com</TagLine>
+        <TagLine style={{marginBottom: '2vh', fontSize: '2vh'}}>Or Leave A Message Here!</TagLine>
         <Message theme={props.theme}/>
         <NContents>
         <A1>

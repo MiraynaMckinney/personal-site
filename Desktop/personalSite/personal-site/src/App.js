@@ -6,7 +6,6 @@ import Navbar from './components/Navbar';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Skills from './pages/Skills';
-import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 
 import { ThemeProvider } from 'styled-components';
@@ -31,7 +30,6 @@ function App() {
         <Routes >
           <Route exact path="/" element={<Home className="routepages" theme={themes[theme]}/>} />
           <Route exact path="/skills" element={<Skills className="routepages" theme={themes[theme]}/>} />
-          <Route exact path="/resume" element={<Resume className="routepages" theme={themes[theme]}/>} />
           <Route exact path="/contact" element={<Contact className="routepages" theme={themes[theme]}/>} />
         </Routes>
       </div>

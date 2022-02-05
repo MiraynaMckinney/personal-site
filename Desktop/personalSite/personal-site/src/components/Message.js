@@ -66,16 +66,15 @@ export default function Message(props) {
     return (
         <SubmitForm >
             <form onSubmit={sendEmail} style={{alignItems:'center'}}>
-                <div style={{display:'flex', justifyContent:'center' }}>
-                <div style={{padding:'5vh'}}>
-                <input value={values.from_name} type="text" name="from_name" onChange={handleChange} placeholder='Name' style={{width:'27vh', height: '5vh'}}/>
+                <div style={{justifyContent:'center', paddingTop:'2vh', display:'flex'}}>
+                <input value={values.from_name} type="text" name="from_name" onChange={handleChange} placeholder='Name' style={{width:'65vh', height: '2vh'}}/>
                 </div>
-                <div style={{padding:'5vh'}}>
-                <input value={values.from_email} type="email" name="from_email" onChange={handleChange} placeholder='Email' style={{width:'27vh', height: '5vh'}}/>
+                <div style={{justifyContent:'center', padding:'2vh', display:'flex' }}>
+                <input value={values.from_email} type="email" name="from_email" onChange={handleChange} placeholder='Email' style={{width:'65vh', height: '2vh'}}/>
                 </div>
-                </div>
+
                 <div style={{ justifyContent:'center', display:'flex'}}>
-                    <textarea value={values.message} onChange={handleChange} name="message" rows='5' placeholder='Message' style={{width:'65vh', height:'25vh', justifyContent:'center'}}/>
+                    <textarea value={values.message} onChange={handleChange} name="message" rows='5' placeholder='Message' style={{width:'65vh', height:'30vh', justifyContent:'center'}}/>
                     </div>
                     <div style={{display:'flex', justifyContent:'center', alignContent:'center', padding:15}}>
                         <SubmitButton type="submit" value="Send" style={{fontSize: '2vh'}} />

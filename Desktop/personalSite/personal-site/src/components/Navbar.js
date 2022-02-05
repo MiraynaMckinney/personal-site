@@ -43,7 +43,7 @@ function Navbar(props) {
         <Typography className='navbar-container'>
             <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}} >
             <div onClick={Home} className='nav-link' ><Logo theme={props.theme}/></div>
-            <Linkcont to='/resume' className='nav-link'>
+            <Linkcont to='/skills' className='nav-link'>
                 Skills
             </Linkcont>
             <Linkcont to='/contact' className='nav-link' >
