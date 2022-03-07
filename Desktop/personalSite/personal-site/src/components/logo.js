@@ -6,8 +6,6 @@ import blacklogo from '../assets/blacklogo.png'
 export default function Logo(props) {
     const bwlogo = props.theme === 'light' ? blacklogo: whitelogo ;
     return (
-        <div>
             <img src={bwlogo} className='logoimg' alt="couldn't load image"/>
-        </div>
     )
 }

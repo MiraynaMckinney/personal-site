@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import Skillscloud from '../components/wordcloud';
-import { TagLine, Title, TagLine2 } from './Styled';
+import { TagLine, Title} from './Styled';
 import {Slider} from '../components/projectslider';
 import { BiDownArrow } from 'react-icons/bi';
 import './Home.css'
