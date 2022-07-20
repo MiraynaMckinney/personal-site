@@ -1,8 +1,9 @@
 
 .logoimg{
-    height: 10vh;
+    height: 7vh;
 }
 
 .logoimg:hover{
     transform: scale(1.03);
 }
+
