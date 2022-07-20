@@ -18,7 +18,7 @@ export function Home(props) {
 
                 <div style={{ display: 'flex', height: '100vh' }}>
                     <div className='leftmain'>
-                        <div className='profileContainer' > <img src={profile} style={{ height: '70vh', padding: '10vw', float: 'right', paddingBottom: 100 }} /> </div>
+                        <div className='profileContainer' > </div>
                     </div>
                     <div className='rightmain'>
                         <Title style={{ marginTop: '30vh' }}>Mirayna Mckinney</Title>
@@ -54,7 +54,7 @@ export function HomeMobile(props) {
                         <TagLine style={{ fontSize: '2vh', color: 'rgb(96, 178, 226)' }}>UCLA Linguistics and Computer Science</TagLine>
                     </div>
                     <div>
-                        <div className='profileContainer' style ={{ width: '80vw', height: '80vw', margin: '5vh'}}> <img src={profile} style={{ height: '70vh', marginTop: '-5vh', marginLeft: '-15vw'}} /> </div>
+                        <div className='profileContainer' style ={{ width: '80vw', height: '80vw', margin: '5vh'}}> </div>
                     </div>
                 </div>
 
