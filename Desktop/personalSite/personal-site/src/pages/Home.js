@@ -4,7 +4,7 @@ import '../components/components.css';
 import { TagLine, Title} from "./Styled";
 import About from './About';
 import './Home.css';
-import profile from '../assets/profile.png'
+
 
 
 function Home(props) {
@@ -18,7 +18,7 @@ function Home(props) {
 
                 <div style={{display:'flex', height: '100vh'}}>
                     <div className='leftmain'>
-                        <div className='profileContainer' > <img src={profile} style={{  height: '70vh', padding: '10vw', float:'right', paddingBottom: 100 }}/> </div>
+                        <div className='profileContainer' > </div>
                     </div>
                     <div className='rightmain'>
                     <Title style={{marginTop: '30vh'}}>Mirayna Mckinney</Title>

@@ -1,7 +1,6 @@
 import React from 'react';
 import '../components/components.css'
 import {Title, TagLine2} from "./Styled"
-import { PicSlider } from '../components/projectslider';
 
 
 
@@ -27,7 +26,6 @@ function About(props) {
                             I spend my free time working on applications I've had ideas for or other projects. Outside the world of computers, I love running, snowboarding, playing soccer and playing guitar.
                         </TagLine2>
                 </span>
-                <span style={{padding: '4vh'}}><PicSlider /></span>
             </div>
         </div>
     )
