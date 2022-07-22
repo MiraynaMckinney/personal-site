@@ -1,7 +1,8 @@
 
 .nav-link{
     text-decoration: none;
-    padding: 3vh
+    padding: 3vh;
+    font-size: 175%;
     
 }
 .nav-link:hover{
@@ -24,15 +25,19 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     box-sizing: border-box;
+    justify-content: center;
+}
+.hidden{
+    display: none !important;
+}
+.menudrop{
+}
+.menu{
 }
 
-.mobile{
-    width: 100vw;
-    height: 15vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
+@media (min-width:600) {
+    .menudrop{
+        display: none ;
+    }
 }

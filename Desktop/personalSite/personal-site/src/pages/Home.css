@@ -80,3 +80,13 @@
     vertical-align: center;
 
 }
+
+@media (max-width: 1023px) {
+    .leftmain{
+        display: none;
+    }
+    .rightmain{
+        justify-content: center;
+        flex: 1;
+    }
+}

@@ -9,8 +9,9 @@ import './Home.css';
 
 export function Home(props) {
 
-    const scroll = () => {
+    var scroll = () => {
         document.getElementById("scroller").scrollTo({ top: 500, behavior: 'smooth' });
+
     }
     return (
         <div className="pages" id='scroller'>
@@ -23,38 +24,6 @@ export function Home(props) {
                     <div className='rightmain'>
                         <Title style={{ marginTop: '30vh' }}>Mirayna Mckinney</Title>
                         <TagLine style={{ fontSize: '2vh', color: 'rgb(96, 178, 226)' }}>UCLA Linguistics and Computer Science</TagLine>
-                    </div>
-                </div>
-
-                <div className='bounce' style={{ textAlign: 'center', position: 'absolute', top: '90%', width: '100vw' }}>
-                    <TagLine style={{ fontSize: '2vh' }}>Learn More About Me</TagLine>
-                    <BiDownArrow onClick={scroll} color={props.theme.opposite} />
-                </div>
-            </div>
-            <div className='page'>
-                <About />
-            </div>
-        </div>
-    )
-}
-
-
-export function HomeMobile(props) {
-
-    const scroll = () => {
-        document.getElementById("scroller").scrollTo({ top: 500, behavior: 'smooth' });
-    }
-    return (
-        <div className="pages" id='scroller'>
-            <div className='page'>
-
-                <div style={{ height: '100vh' }}>
-                    <div >
-                        <Title >Mirayna Mckinney</Title>
-                        <TagLine style={{ fontSize: '2vh', color: 'rgb(96, 178, 226)' }}>UCLA Linguistics and Computer Science</TagLine>
-                    </div>
-                    <div>
-                        <div className='profileContainer' style ={{ width: '80vw', height: '80vw', margin: '5vh'}}> </div>
                     </div>
                 </div>
 

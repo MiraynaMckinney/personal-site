@@ -17,8 +17,8 @@ const SubmitForm = styled.div`
     padding: 30px;
     background-color: ${props => props.theme.themeColor};
     border-radius: 10%;
-    width: 50vw;
-    height: 50vh;
+    width: 50%;
+    height: 50%;
     
 `;
 
@@ -65,20 +65,21 @@ export default function Message(props) {
 
     return (
         <SubmitForm >
-            <form onSubmit={sendEmail} style={{alignItems:'center'}}>
-                <div style={{justifyContent:'center', paddingTop:'2vh', display:'flex'}}>
-                <input value={values.from_name} type="text" name="from_name" onChange={handleChange} placeholder='Name' style={{width:'65vh', height: '2vh'}}/>
-                </div>
-                <div style={{justifyContent:'center', padding:'2vh', display:'flex' }}>
-                <input value={values.from_email} type="email" name="from_email" onChange={handleChange} placeholder='Email' style={{width:'65vh', height: '2vh'}}/>
-                </div>
-
-                <div style={{ justifyContent:'center', display:'flex'}}>
-                    <textarea value={values.message} onChange={handleChange} name="message" rows='5' placeholder='Message' style={{width:'65vh', height:'30vh', justifyContent:'center'}}/>
+            <form onSubmit={sendEmail} style={{ alignItems: 'center' }}>
+                <div style={{display:'flex'}}>
+                    <div className='personal info'>
+                        <input value={values.from_name} type="text" name="from_name" onChange={handleChange} placeholder='Name' style={{ width: '65vh', height: '2vh' }} />
                     </div>
-                    <div style={{display:'flex', justifyContent:'center', alignContent:'center', padding:15}}>
-                        <SubmitButton type="submit" value="Send" style={{fontSize: '2vh'}} />
+                    <div className='personal info'>
+                        <input value={values.from_email} type="email" name="from_email" onChange={handleChange} placeholder='Email' style={{ width: '65vh', height: '2vh' }} />
                     </div>
+                </div>
+                <div className='info'>
+                    <textarea value={values.message} onChange={handleChange} name="message" rows='5' placeholder='Message' style={{ width: '65vh', height: '30vh', justifyContent: 'center' }} />
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'center', alignContent: 'center', padding: 15 }}>
+                    <SubmitButton type="submit" value="Send" style={{ fontSize: '2vh' }} />
+                </div>
             </form>
         </SubmitForm >
     );

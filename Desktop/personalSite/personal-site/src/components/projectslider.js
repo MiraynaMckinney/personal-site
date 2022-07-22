@@ -2,15 +2,13 @@ import React, { useState } from "react";
 import './projectslider.css'
 import { BiRightArrow, BiLeftArrow } from 'react-icons/bi'
 import WW3 from '../assets/WW3.png'
-import snow from '../assets/snow.jpeg'
 import ball from '../assets/ball.png'
-import yellowstone from '../assets/yellowstone.jpg'
 
 
 const Slides = [
     {
         image: WW3,
-        source: 'https://github.com/guilhermetco/CS97---WestWoodWalks',
+        // source: 'https://github.com/guilhermetco/CS97---WestWoodWalks',
 
     },
     {
@@ -44,17 +42,7 @@ export function Slider() {
 }
 
 const Pics = [
-    {
-        image: snow,
-        source: 'https://github.com/guilhermetco/CS97---WestWoodWalks',
-        text: 'first',
 
-    },
-    {
-        image: yellowstone,
-        source: '',
-        text: 'second'
-    }
 ]
 
 const picsNum = Slides.length;

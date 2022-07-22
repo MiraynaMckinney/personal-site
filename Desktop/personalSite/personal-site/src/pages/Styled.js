@@ -13,7 +13,6 @@ export const Page = styled.div`
 export const TagLine2 = styled.h1`
     color: ${props => props.theme.tagLineColor};
     background-color: transparent;
-    font-size: 3vh;
 `;
 
 export const Container = styled.div`
