@@ -151,25 +151,3 @@
   margin-top: 5px;
   font-size: 12px;
 }
-.tiles .tile:focus:before,
-.tiles .tile:focus span, 
-.tiles .tile:hover:before,
-.tiles .tile:hover span {
-  opacity: 1;
-}
-.tiles .tile:focus:before, 
-.tiles .tile:hover:before {
-  top: 50%;
-}
-.tiles .tile:focus span, 
-.tiles .tile:hover span {
-  top: 0;
-}
-.tiles .tile:focus .title, 
-.tiles .tile:hover .title {
-          transition-delay: 0.15s;
-}
-.tiles .tile:focus .info, 
-.tiles .tile:hover .info {
-          transition-delay: 0.25s;
-}

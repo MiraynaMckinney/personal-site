@@ -3,17 +3,22 @@ import './projectslider.css'
 import { BiRightArrow, BiLeftArrow } from 'react-icons/bi'
 import WW3 from '../assets/WW3.png'
 import ball from '../assets/ball.png'
+import morsecode from '../assets/morsecode.png'
 
 
 const Slides = [
     {
         image: WW3,
-        // source: 'https://github.com/guilhermetco/CS97---WestWoodWalks',
+        info: '',
 
     },
     {
         image: ball,
-        source: '',
+        info: '',
+    },
+    {
+        image: morsecode,
+        info: '',
     }
 ]
 let slides = Slides;
@@ -27,13 +32,9 @@ export function Slider() {
         <div class="tiles">{
             slides.map((project) => {
                 return (
-
                     <a class="tile" >
                         <img src={project.image} />
-                        <div class="details">
-                            <span class="title">{project.source}</span>
-                            <span class="info">{project.source}</span>
-                        </div>
+                        <span>{project.info}</span>
                     </a>
                 )
             })}

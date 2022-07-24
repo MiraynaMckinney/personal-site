@@ -36,8 +36,11 @@
 .menu{
 }
 
-@media (min-width:600) {
+@media (max-width:600) {
     .menudrop{
         display: none ;
+    }
+    .nav-link{
+        font-size: 100%;
     }
 }
