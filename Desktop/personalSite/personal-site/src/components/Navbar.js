@@ -8,6 +8,8 @@ import { Typography } from '@material-ui/core';
 import Logo from './logo';
 import { useNavigate } from 'react-router';
 import { BiMenu } from "react-icons/bi";
+import Skills from '../pages/Skills';
+import Contact from '../pages/Contact';
 
 
 
@@ -34,40 +36,33 @@ export function Navbar(props) {
         }
     };
     let navigate = useNavigate();
-    async function AboutMe() {
+    async function Scroll(top) {
         await navigate('/');
-        document.getElementById("scroller").scrollTo({ top: 500, behavior: 'smooth' });
+        document.getElementById("scroller").scrollTo({ top: top, behavior: 'smooth' });
     }
-    async function Home() {
-        await navigate('/');
-        document.getElementById("scroller").scrollTo({ top: 0, behavior: 'smooth' });
-    }
-    const icon = props.theme === "light" ? <CgSun size={'4vh'} color='black' className='nav-link' /> : < HiMoon size={'4vh'} color='white' className='nav-link' />;
+    const icon = props.theme === "light" ? <CgSun size={'3vh'} color='black' className='nav-link' /> : < HiMoon size={'4vh'} color='white' className='nav-link' />;
     return (
-        <Typography className='navbar-container'>
-            <div style={{ display: 'flex', alignItems: 'center' }} >
-            <div onClick={Home} className='nav-link' ><Logo theme={props.theme} /></div>
-                {/* <BiMenu size={'4vh'} style={{padding: '3vh' }} onClick={onClick} className='menudrop nav-link' color={props.theme === "light" ? 'black' : 'white'} /> */}
-                <About onClick={AboutMe} className='nav-link menu' >
-                    About Me
-                </About>
-                 <Linkcont to='/skills' className='nav-link menu'>
-                    Skills
-                </Linkcont>
-                <Linkcont to='/contact' className='nav-link menu' >
-                    Contact Me
-                </Linkcont>
-                
-
-                
-            </div>
+        <div style={{ display: 'flex' }}>
+            <Typography className='navbar-container'>
+                <div style={{ display: 'flex' }} >
+                    <div onClick={() => Scroll(0)} className='nav-link'> &lt;Mirayna /&gt; </div>
+                    <div onClick={() => Scroll(500)} className='nav-link' >
+                        About
+                    </div>
+                    <div onClick={() => Scroll(1000)} className='nav-link'>
+                        Skills
+                    </div>
+                    <div onClick={() => Scroll(1500)} className='nav-link' >
+                        Contact
+                    </div>
+                </div>
+            </Typography>
             <div style={{}}>
                 <div onClick={changeTheme} style={{ position: 'sticky' }}>
                     {icon}
                 </div>
             </div>
-
-        </Typography>
+        </div>
 
     )
 }

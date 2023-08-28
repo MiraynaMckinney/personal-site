@@ -1,8 +1,8 @@
 .downarrow{
-    position:absolute;
-    bottom:10px;
-    justify-self: center;
-    flex: auto;
+    position: absolute;
+    align-items: center;
+    width: 200px;
+    justify-content: center;
 }
 
 .uparrow{

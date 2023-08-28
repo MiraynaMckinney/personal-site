@@ -28,7 +28,6 @@
     width: 100vw;
     height: calc(100vh - 15vh);
     scrollbar-width: none;
-    
 }
 
 .page {
@@ -39,8 +38,9 @@
     scroll-behavior: smooth;
 }
 
-.bounce {
+.downarrow {
     animation: 2s ease-in-out 0s infinite alternate bounceArrow ;
+    text-align: center;
   }
   
   @keyframes bounceArrow {
