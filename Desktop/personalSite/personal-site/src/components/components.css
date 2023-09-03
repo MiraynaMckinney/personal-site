@@ -1,8 +1,8 @@
 .downarrow{
-    position:absolute;
-    bottom:10px;
-    justify-self: center;
-    flex: auto;
+    position: absolute;
+    align-items: center;
+    width: 200px;
+    justify-content: center;
 }
 
 .uparrow{
@@ -11,4 +11,14 @@
     top:10px;
     left: 60%;
     margin-left:-150px;
+}
+
+.contactLink{
+    margin: 3px;
+}
+
+.socialMedia{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
 }

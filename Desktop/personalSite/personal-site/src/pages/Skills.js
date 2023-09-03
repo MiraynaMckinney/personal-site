@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import Skillscloud from '../components/wordcloud';
 import { TagLine, Title} from './Styled';
 import {Slider} from '../components/projectslider';
 import { BiDownArrow } from 'react-icons/bi';
@@ -14,7 +13,7 @@ class Skills extends Component {
             <div className="pages" id='scroller2'>
                 <div className='page'>
                     <Title>Skills</Title>
-                    <div style={{display: 'flex', textAlign: 'center'}}>
+                    {/* <div style={{display: 'flex', textAlign: 'center'}}>
                     <div style={{ justifyContent: 'center', padding:'3vh', whiteSpace: 'pre-line', width:'45vw'}}>
                         <TagLine style={{fontSize:'2.5vh', paddingTop: '25vh'}}>
                             I've developed this array of skills as I've worked on different projects over the years.
@@ -28,14 +27,7 @@ class Skills extends Component {
                     <div className='bounce' style={{textAlign: 'center', position: 'absolute', top:'90%', width: '100vw'}}>
                         <TagLine style={{fontSize: '2vh'}}>Check out some of my projects</TagLine>
                         <BiDownArrow onClick= {scroll} color={this.props.theme.opposite}/>
-                    </div>
-                </div>
-                <div className='page' style={{ justifyContent: 'center' }}>
-                    <Title>Projects</Title>
-                    <TagLine>Check Out Some of the Projects I've Worked on!</TagLine>
-                    <div style={{height:'100vh', width:'100vw'}} >
-                        <Slider />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         );

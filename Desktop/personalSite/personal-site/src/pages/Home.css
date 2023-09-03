@@ -28,8 +28,12 @@
     width: 100vw;
     height: calc(100vh - 15vh);
     scrollbar-width: none;
-    
 }
+
+@font-face {
+    font-family: "NexaLight";
+    src: local("NexaLight"), url(../fonts/Font.otf), format("truetype");
+  }
 
 .page {
     scroll-snap-align: start;
@@ -37,10 +41,12 @@
     width: 100vw;
     justify-content: center;
     scroll-behavior: smooth;
+    font-family: "NexaLight";
 }
 
-.bounce {
+.downarrow {
     animation: 2s ease-in-out 0s infinite alternate bounceArrow ;
+    text-align: center;
   }
   
   @keyframes bounceArrow {
