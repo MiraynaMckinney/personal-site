@@ -27,18 +27,6 @@ function Contact(props) {
     return (
         <Container>
             <Title style={{ marginBottom: '2vh' }}>Contact Me</Title>
-            <NContents>
-                {/* <A1>
-                    <Extlink href="https://www.linkedin.com/in/mirayna-mckinney-905026213" style={{ textDecoration: 'none' }}>
-                        <BsLinkedin className='nav-link' style={{ padding: '0vh' }} size={'5vh'} color={props.theme.opposite} />
-                    </Extlink>
-                </A1>
-                <A1>
-                    <Extlink href="https://github.com/MiraynaMckinney" style={{ textDecoration: 'none' }}>
-                        <BsGithub className='nav-link' style={{ padding: '0vh' }} size={'5vh'} color={props.theme.opposite} />
-                    </Extlink>
-                </A1> */}
-            </NContents>
         </Container>
     )
 }

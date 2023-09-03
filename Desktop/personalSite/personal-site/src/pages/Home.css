@@ -30,12 +30,18 @@
     scrollbar-width: none;
 }
 
+@font-face {
+    font-family: "NexaLight";
+    src: local("NexaLight"), url(../fonts/Font.otf), format("truetype");
+  }
+
 .page {
     scroll-snap-align: start;
     height: calc(100vh - 15vh);
     width: 100vw;
     justify-content: center;
     scroll-behavior: smooth;
+    font-family: "NexaLight";
 }
 
 .downarrow {

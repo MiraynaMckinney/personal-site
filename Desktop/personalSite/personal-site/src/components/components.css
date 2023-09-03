@@ -12,3 +12,13 @@
     left: 60%;
     margin-left:-150px;
 }
+
+.contactLink{
+    margin: 3px;
+}
+
+.socialMedia{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}

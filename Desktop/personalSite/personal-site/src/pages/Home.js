@@ -2,6 +2,7 @@ import { BiDownArrow } from 'react-icons/bi';
 import React from 'react';
 import '../components/components.css';
 import { TagLine, Title } from "./Styled";
+import { SocialMedia } from '../components/SocialMedia';
 import About from './About';
 import './Home.css';
 import Skills from './Skills';
@@ -20,6 +21,7 @@ export function Home(props) {
             <div className='page'>
                 <Title style={{ marginTop: '30vh' }}>Mirayna Mckinney</Title>
                 <TagLine style={{ fontSize: '2vh', color: 'rgb(96, 178, 226)' }}>Software Engineer</TagLine>
+                <SocialMedia/>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <div className='downarrow' onClick={() => scroll(500)}>
                         <TagLine style={{ fontSize: '2vh' }}>Learn More About Me</TagLine>

@@ -29,15 +29,15 @@ export const TagLine = styled.h1`
     text-align: center;
     font-weight: normal;
     margin: 0;
+    font-family: "NexaLight"
 `;
 export const Title = styled.h1`
     color: ${props => props.theme.titleColor};
     background-color: transparent;
     text-align: center;
-    border-radius: '15px';
-    position: 'relative';
     font-size: 6vh;
     margin: 0;
+    font-family: "NexaLight"
 `;
 export const A1 = styled.a`
     color: ${props => props.theme.titleColor};
@@ -53,4 +53,5 @@ justify-content: center;
 align-items: center;
 justify-items: center;
 text-decoration: none;
+font-family: "NexaLight"
 `;
